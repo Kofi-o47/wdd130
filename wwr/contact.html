@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="About page for White Water Rafting Company">
+    <meta name="description" content="Contact information and inquiry form for White Water Rafting adventures">
+    <title> Contact Us - White Water Rafting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+    <img src="images/logo.jpg" alt="Rafting Site Logo" class="logo">
+    
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+    
+ <main>
+    <div class="contact-container">
+        <section class="company-info">
+            <h2>Contact Information</h2>
+            <div class="contact-details">
+                <address>
+                    <strong>White Water Rafting Co.</strong><br>
+                    123 River Run Way<br>
+                    Rapids City, ID 83445<br><br>
+                    📞 <a href="tel:+12085551234">(208) 555-1234</a><br>
+                    📧 <a href="mailto:info@wwrafting.com">info@wwrafting.com</a>
+                </address>
+                
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.2692505416353!2d-111.7925757!3d43.8145339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID%2083440!5e0!3m2!1sen!2sus!4v1670000000000!5m2!1sen!2sus" 
+                    width="400" height="300" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            
+            <div class="employee-profiles">
+                <h3>Our Team</h3>
+                <div class="employees">
+                    <figure>
+                        <img src="images/head guide.webp" alt="River Guide Sarah">
+                        <figcaption>Sarah Johnson<br><em>Head Guide</em></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/safty.jpeg" alt="Safety Expert Mike">
+                        <figcaption>Mike Chen<br><em>Safety Director</em></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/booking.webp" alt="Booking Manager Lisa">
+                        <figcaption>Lisa Rodriguez<br><em>Booking Manager</em></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <fieldset class="form-group">
+                    <legend>Purpose of Message:</legend>
+                    <div class="radio-options">
+                        <label>
+                            <input type="radio" name="purpose" value="general" checked>
+                            General Inquiry
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="reservation">
+                            Reservation Question
+                        </label>
+                        <label>
+                            <input type="radio" name="purpose" value="suggestion">
+                            Website Suggestion
+                        </label>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <div class="form-group checkbox">
+                    <label>
+                        <input type="checkbox" name="subscribe" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </section>
+    </div>
+</main>   
+
+<footer>
+    <p>&copy; 2023 White Water Rafting Company | Your Name</p>
+    <nav class="socialmedia">
+        <a href="https://www.facebook.com"><img src="images/facebook-64.webp" alt="Facebook"></a>
+        <a href="https://x.com"><img src="images/Rounded_Twitter5_svg-64.webp" alt="X"></a>
+        <a href="https://www.instagram.com"><img src="images/Rounded_Instagram_svg-64.webp" alt="instagram"></a>
+       
+    </nav>
+    <p><a href="https://moqups.com/your-wireframe-link" target="_blank">View Contact Page Wireframe</a></p>
+</footer>
