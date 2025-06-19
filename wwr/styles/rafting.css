@@ -345,3 +345,228 @@ legend {
     }
 }
 
+/* Home Page Specific Styles */
+.hero {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.newsletter {
+    background-color: var(--secondary-bg-color);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--primary-color);
+    color: white;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: var(--accent-dark-color);
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.grid-item h3 {
+    padding: 1rem 1rem 0;
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    padding: 0 1rem 1rem;
+}
+
+/* Trips Page Specific Styles */
+.trip-hero {
+    position: relative;
+    height: 400px;
+    background-image: url('../images/trip-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.trip-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.trip-hero h1,
+.trip-hero .cta-button {
+    position: relative;
+    z-index: 1;
+}
+
+.trip-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.trip-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-info {
+    padding: 1.5rem;
+}
+
+.trip-info h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.trip-info ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.trip-info li {
+    margin-bottom: 0.5rem;
+}
+
+.trip-table {
+    margin: 3rem 0;
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.trip-table th,
+.trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.trip-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.trip-cta {
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--secondary-bg-color);
+    margin: 3rem 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .trip-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .grid-content,
+    .trip-cards {
+        grid-template-columns: 1fr;
+    }
+}
